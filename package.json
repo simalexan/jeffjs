@@ -3,12 +3,11 @@
   "version": "1.0.0",
   "description": "Generate scaffold serverless Node.js applications and deploy to AWS Lambda, S3 and Cloudfront",
   "main": "index.js",
+  "bin": {
+    "jeff": "./bin/jeff.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/simalexan/jeffjs.git"
   },
   "keywords": [
     "serverless",
@@ -19,9 +18,20 @@
     "microservices",
     "lambda"
   ],
+
+  "author": "Alexander Simovic <alexander.simovic@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.132.0",
+    "colors": "^1.1.2",
+    "minimist": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simalexan/jeffjs.git"
+  },
   "bugs": {
     "url": "https://github.com/simalexan/jeffjs/issues"
   },
-  "author": "Alexander Simovic <alexander.simovic@gmail.com>",
-  "license": "MIT"
+  "homepage": "https://github.com/simalexan/jeffjs#readme"
 }
