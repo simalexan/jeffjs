@@ -10,7 +10,7 @@ const showHelp = require('../lib/help')
 function readArgs() {
   return minimist(process.argv.slice(2), {
     alias: { h: 'help',  v: 'version'},
-    string: ['region'],
+    string: ['region', 'name', 'claudia-api'],
     boolean: [],
     default: {}
   })
@@ -18,8 +18,8 @@ function readArgs() {
 
 function cmd(console) {
   const args = readArgs()
-  const command = args._ && args._.length && args._[0]
   const commands = readCommands('../commands')
+  const command = args._ && args._.length && args._[0]
 
   if (args.version) {
     return console.log(require(path.join(__dirname, '..', 'package.json')).version)
@@ -44,7 +44,7 @@ function cmd(console) {
     return console.log(`Set AWS credentials first. Guide is available here: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html`)
   }
 
-  return askJeff(command, commands, {}, console)
+  return askJeff(command, commands, args, console)
 }
 
 function askJeff(command, commands, args, console) {
