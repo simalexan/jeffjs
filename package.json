@@ -18,13 +18,13 @@
     "microservices",
     "lambda"
   ],
-
   "author": "Alexander Simovic <alexander.simovic@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.132.0",
     "colors": "^1.1.2",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "shelljs": "^0.7.8"
   },
   "repository": {
     "type": "git",
