@@ -30,3 +30,5 @@ And now create just deploy:
   ```shell
   jeff deploy
   ```
+  
+WIP drawback: at the moment, the default Jeff deployment region is `us-east-1` will be changed soon
