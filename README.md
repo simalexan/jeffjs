@@ -3,8 +3,12 @@
 ## WIP
 ### Jeff is your tool for generating and deploying serverless JavaScript applications
  
+### Since its a Work In Progress
+You need to do a `npm link` after cloning this repo to have Jeff generate your API
+
+## Usage
  
- Generate a project within the project folder
+Generate a project within the project folder
  ```shell
  mkdir project-folder
  
@@ -12,7 +16,20 @@
  ```
  
  
- Generate a project with the project folder
+Generate a project with the project folder
   ```shell
   jeff gen --api crud --endpoints products --dynamo --folder project-folder
   ```
+  
+This will generate a whole API with a `POST /products` route with DynamoDB access 
+  
+And now create & deploy your Lambda:
+  ```shell
+  npm run create
+  ```
+  
+For further deployment updates just run
+  ```shell
+  npm run deploy
+  ```
+  
