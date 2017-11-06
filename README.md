@@ -26,13 +26,7 @@ Generate a project with the project folder
   
 This will generate a whole API with a `POST /products` route with DynamoDB access 
   
-And now create & deploy your Lambda:
+And now create just deploy:
   ```shell
-  npm run create
+  jeff deploy
   ```
-  
-For further deployment updates just run
-  ```shell
-  npm run deploy
-  ```
-  
