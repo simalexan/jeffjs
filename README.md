@@ -2,14 +2,21 @@
 WIP
 
 ### Jeff is your tool for generating and deploying serverless JavaScript applications
+
+> Another boring code generator, right? Nothing can generate complex business logic. 
+
+> You're right and that's exactly what Jeff isn't for.
+
+### Jeff's goal is to help you with code overhead, helping you focus on what's important, instead of manually boring yourself with the generated code 
  
-## Install
+ 
+## How to Install?
  
 ```shell
 npm install -g jeffjs
 ```
  
-## Usage
+## How to Use?
  
 Generate a project within the project folder
  ```shell
